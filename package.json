@@ -1,0 +1,33 @@
+{
+  "name": "simple-geoip",
+  "version": "0.1.0",
+  "description": "The simplest possible way to get IP geolocation information.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --no-timeouts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whois-api-llc/node-simple-geoip.git"
+  },
+  "keywords": [
+    "ip",
+    "ip address",
+    "geoip",
+    "geolocation",
+    "api"
+  ],
+  "author": "Randall Degges",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/whois-api-llc/node-simple-geoip/issues"
+  },
+  "homepage": "https://github.com/whois-api-llc/node-simple-geoip#readme",
+  "dependencies": {
+    "backoff": "^2.5.0",
+    "request": "^2.82.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.5.3"
+  }
+}
