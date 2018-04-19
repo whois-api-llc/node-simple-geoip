@@ -20,7 +20,7 @@
 
 ## Prerequisites
 
-To use this library, you'll need to create a free WhoisAPI account:
+To use this library, you'll need to create a free GeoIPify account:
 https://geoipify.whoisxmlapi.com/
 
 If you haven't done this yet, please do so now.
