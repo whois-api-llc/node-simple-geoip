@@ -13,7 +13,7 @@ describe("GeoIP", () => {
       assert.throws(() => { new GeoIP(); }, "API key required");
     });
 
-    it("should throw an error if bad API key is supplied", () => {
+    it("should throw an error if a bad API key is supplied", () => {
       assert.throws(() => { new GeoIP(123); }, "API key must be a string");
     });
 
