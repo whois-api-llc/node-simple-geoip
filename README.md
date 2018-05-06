@@ -91,6 +91,10 @@ let geoIP = new GeoIP("your-api-key", { retries: 2 });
 
 ## Changelog
 
+0.1.1: *05-06-2018*
+
+- Updating dependencies to handle `hoek` vulnerability.
+
 0.1.0: *04-16-2018*
 
 - First release!
