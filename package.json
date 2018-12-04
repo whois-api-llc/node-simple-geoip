@@ -1,6 +1,6 @@
 {
   "name": "simple-geoip",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "The simplest possible way to get IP geolocation information.",
   "main": "index.js",
   "scripts": {
@@ -25,9 +25,9 @@
   "homepage": "https://github.com/whois-api-llc/node-simple-geoip#readme",
   "dependencies": {
     "backoff": "^2.5.0",
-    "request": "^2.82.0"
+    "request": "^2.88.0"
   },
   "devDependencies": {
-    "mocha": "^3.5.3"
+    "mocha": "^5.2.0"
   }
 }
