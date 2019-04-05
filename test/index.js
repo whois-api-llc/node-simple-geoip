@@ -10,15 +10,15 @@ const API_KEY = process.env.API_KEY;
 describe("GeoIP", () => {
   describe("#verifyOptions()", () => {
     it("should throw an error if no API key is supplied", () => {
-      assert.throws(() => { new GeoIP(); }, "API key required");
+      assert.throws(() => { new GeoIP(); }, "/API key required$/");
     });
 
     it("should throw an error if a bad API key is supplied", () => {
-      assert.throws(() => { new GeoIP(123); }, "API key must be a string");
+      assert.throws(() => { new GeoIP(123); }, "/API key must be a string$/");
     });
 
     it("should throw an error if bad opts.retries is supplied", () => {
-      assert.throws(() => { new GeoIP("api key", { retries: "retries" }); }, "opts.retries must be a number");
+      assert.throws(() => { new GeoIP("api key", { retries: "retries" }); }, "/opts\.retries must be a number$/");
     });
   });
 
