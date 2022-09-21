@@ -20,8 +20,8 @@
 
 ## Prerequisites
 
-To use this library, you'll need to create a free GeoIPify account:
-https://geoipify.whoisxmlapi.com/
+To use this library, you'll need to create a free IP Geolocation account:
+https://ip-geolocation.whoisxmlapi.com/api
 
 If you haven't done this yet, please do so now.
 
@@ -46,16 +46,16 @@ This library gives you access to all sorts of geographical location data that
 you can use in your application in any number of ways.
 
 ```javascript
-const GeoIP = require("simple-geoip");
+const IpGeolocation = require("simple-geoip");
 
-let geoIP = new GeoIP("your-api-key");
-geoIP.lookup("8.8.8.8", (err, data) => {
+let ipGeolocation = new IpGeolocation("your-api-key");
+ipGeolocation.lookup("8.8.8.8", (err, data) => {
   if (err) throw err;
   console.log(data);
 });
 ```
 
-Here's the sort of data you might get back when performing a geoip lookup
+Here's the sort of data you might get back when performing a ip geolocation lookup
 request:
 
 ```json
@@ -74,7 +74,7 @@ request:
 ```
 
 By default, this library handles retrying failed HTTP requests for you. For
-instance: if the geoip API service is currently down or having issues,
+instance: if the IP Geolocation API service is currently down or having issues,
 your request will be retried up to five consecutive times before failing.
 
 This can add more request time, and may not be what you want in all cases.
@@ -83,9 +83,9 @@ If you'd prefer to lower the amount of retries that this library will perform on
 your behalf, you can pass in a `retries` option like so:
 
 ```javascript
-const GeoIP = require("simple-geoip");
+const IPGeolocation = require("simple-geoip");
 
-let geoIP = new GeoIP("your-api-key", { retries: 2 });
+let iPGeolocation = new IPGeolocation("your-api-key", { retries: 2 });
 ```
 
 
